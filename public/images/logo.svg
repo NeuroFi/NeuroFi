@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
   <!-- Background Circle -->
   <circle cx="250" cy="250" r="200" fill="#e2d9d1" />
@@ -32,4 +33,8 @@
     <circle cx="350" cy="200" r="15" fill="#d1a298" />
     <circle cx="350" cy="300" r="15" fill="#d1a298" />
   </g>
+  
+  <!-- Removed the dollar sign vertical element as requested -->
+  
+  <!-- Text removed as requested -->
 </svg> 

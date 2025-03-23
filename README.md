@@ -34,11 +34,9 @@ Our mission is to democratize access to sophisticated trading algorithms and ris
 
 NeuroFi is built on a modern, scalable architecture designed for performance and reliability. The system is organized into several key layers:
 
-<div align="center">
-  <object type="image/svg+xml" data="public/images/embed/architecture.svg" width="700">
-    <img src="public/images/architecture.svg" alt="NeuroFi Architecture" width="700" />
-  </object>
-</div>
+<p align="center">
+  <img src="public/images/embed/architecture.svg" alt="NeuroFi Architecture" width="700" />
+</p>
 
 ### Frontend Layer
 - Built with React, Next.js, and TypeScript for a responsive and type-safe user experience
@@ -73,11 +71,9 @@ NeuroFi is built on a modern, scalable architecture designed for performance and
 
 The platform's data flow architecture ensures efficient processing of information from various sources to deliver actionable insights to users:
 
-<div align="center">
-  <object type="image/svg+xml" data="public/images/embed/data-flow.svg" width="700">
-    <img src="public/images/data-flow.svg" alt="NeuroFi Data Flow" width="700" />
-  </object>
-</div>
+<p align="center">
+  <img src="public/images/embed/data-flow.svg" alt="NeuroFi Data Flow" width="700" />
+</p>
 
 1. **Data Acquisition**: Raw data is collected from market data providers, blockchain networks, and user wallets
    - Price feeds from major exchanges and aggregators
@@ -107,11 +103,9 @@ The platform's data flow architecture ensures efficient processing of informatio
 
 NeuroFi consists of four primary functional modules, each handling a specific aspect of the trading ecosystem:
 
-<div align="center">
-  <object type="image/svg+xml" data="public/images/embed/system-components.svg" width="700">
-    <img src="public/images/system-components.svg" alt="NeuroFi System Components" width="700" />
-  </object>
-</div>
+<p align="center">
+  <img src="public/images/embed/system-components.svg" alt="NeuroFi System Components" width="700" />
+</p>
 
 ### NeuroTrade
 The AI-powered trading signal generation system provides:
