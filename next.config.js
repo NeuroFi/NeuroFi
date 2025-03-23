@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['neurofi.net'],
+    domains: ['neurofi.world'],
   },
   webpack: (config) => {
     config.resolve.fallback = { fs: false, path: false };

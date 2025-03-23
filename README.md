@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/NeuroFi">GitHub</a> •
   <a href="https://x.com/NeuroFi_">Twitter</a> •
-  <a href="https://www.neurofi.net">Website</a>
+  <a href="https://www.neurofi.world">Website</a>
 </p>
 
 ## Overview
@@ -259,7 +259,7 @@ yarn dev
 Create a `.env.local` file in the project root and add the following variables:
 
 ```
-NEXT_PUBLIC_API_URL=https://api.neurofi.net
+NEXT_PUBLIC_API_URL=https://api.neurofi.world
 NEXT_PUBLIC_CHAIN_ID=1
 NEXT_PUBLIC_NETWORK_NAME=Ethereum
 ```
@@ -321,10 +321,10 @@ See `.env.example` for additional configuration options.
 
 Join our growing community:
 
-- **Documentation**: [docs.neurofi.net](https://docs.neurofi.net)
+- **Documentation**: [docs.neurofi.world](https://docs.neurofi.world)
 - **Twitter**: [@NeuroFi_](https://x.com/NeuroFi_)
-- **Blog**: [blog.neurofi.net](https://blog.neurofi.net)
-- **Support**: [support@neurofi.net](mailto:support@neurofi.net)
+- **Blog**: [blog.neurofi.world](https://blog.neurofi.world)
+- **Support**: [support@neurofi.world](mailto:support@neurofi.world)
 
 ## Contributing
 
@@ -340,7 +340,7 @@ For major changes, please open an issue first to discuss what you would like to 
 
 ## Security
 
-Security is our top priority. If you discover a security vulnerability, please send an email to security@neurofi.net instead of using the issue tracker.
+Security is our top priority. If you discover a security vulnerability, please send an email to security@neurofi.world instead of using the issue tracker.
 
 ## License
 

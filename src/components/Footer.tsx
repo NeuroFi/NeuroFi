@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
               <a href="https://github.com/NeuroFi" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-500">
                 <FiGithub size={20} />
               </a>
-              <a href="https://www.neurofi.net" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-500">
+              <a href="https://www.neurofi.world" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-500">
                 <FiGlobe size={20} />
               </a>
             </div>
