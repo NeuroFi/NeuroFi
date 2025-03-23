@@ -1,7 +1,7 @@
 # NeuroFi
 
 <p align="center">
-  <img src="public/logo.svg" alt="NeuroFi Logo" width="180" />
+  <img src="public/logo.svg" alt="NeuroFi Logo" width="300" />
 </p>
 
 <p align="center">
