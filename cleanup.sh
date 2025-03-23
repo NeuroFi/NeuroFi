@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Cleanup script to remove Chinese characters and personal information
+# Cleanup script to remove non-English characters and sensitive information
 
 echo "Starting cleanup process..."
 
-# List of personal information patterns to replace (encoded to prevent leaking)
-PERSON_NAME="cuiminghui"
-COMPANY_NAMES=("lyra" "carol")
+# List of information patterns to replace (examples only)
+EXAMPLE_NAME="username"
+EXAMPLE_COMPANIES=("company1" "company2")
 
 # Function to clean a file
 clean_file() {
@@ -22,10 +22,10 @@ clean_file() {
   local tmpfile=$(mktemp)
   
   # Copy content to tmp file while replacing patterns
-  cat "$file" | sed "s/$PERSON_NAME/developer/g" > "$tmpfile"
+  cat "$file" | sed "s/$EXAMPLE_NAME/developer/g" > "$tmpfile"
   
   # Replace company names
-  for company in "${COMPANY_NAMES[@]}"; do
+  for company in "${EXAMPLE_COMPANIES[@]}"; do
     sed -i "" "s/$company/company/g" "$tmpfile"
   done
   
