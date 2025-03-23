@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <style>
+    .module {
+      fill: #f0f7ff;
+      stroke: #3b82f6;
+      stroke-width: 2;
+      rx: 12;
+      ry: 12;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    }
+    .sub-module {
+      fill: #ffffff;
+      stroke: #93c5fd;
+      stroke-width: 1.5;
+      rx: 8;
+      ry: 8;
+    }
+    .title {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      text-anchor: middle;
+      fill: #1e40af;
+    }
+    .subtitle {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      text-anchor: middle;
+      fill: #3b82f6;
+    }
+    .feature-text {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      text-anchor: middle;
+      fill: #334155;
+    }
+    .connector {
+      stroke: #93c5fd;
+      stroke-width: 2;
+      stroke-dasharray: 5 3;
+      fill: none;
+    }
+    .main-title {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-anchor: middle;
+      fill: #1e3a8a;
+    }
+  </style>
+  
+  <!-- Title -->
+  <text class="main-title" x="400" y="30">NeuroFi System Components</text>
+  
+  <!-- NeuroTrade Module -->
+  <rect class="module" x="80" y="60" width="280" height="220" />
+  <text class="title" x="220" y="90">NeuroTrade</text>
+  <text class="subtitle" x="220" y="115">AI Trading Signal Generation</text>
+  
+  <rect class="sub-module" x="100" y="130" width="110" height="50" />
+  <text class="feature-text" x="155" y="160">Signal Analysis</text>
+  
+  <rect class="sub-module" x="100" y="190" width="110" height="50" />
+  <text class="feature-text" x="155" y="220">Historical Backtesting</text>
+  
+  <rect class="sub-module" x="230" y="130" width="110" height="50" />
+  <text class="feature-text" x="285" y="160">Strategy Builder</text>
+  
+  <rect class="sub-module" x="230" y="190" width="110" height="50" />
+  <text class="feature-text" x="285" y="220">Auto-Execution</text>
+  
+  <!-- NeuroScan Module -->
+  <rect class="module" x="440" y="60" width="280" height="220" />
+  <text class="title" x="580" y="90">NeuroScan</text>
+  <text class="subtitle" x="580" y="115">Market Analysis Tools</text>
+  
+  <rect class="sub-module" x="460" y="130" width="110" height="50" />
+  <text class="feature-text" x="515" y="160">Chart Analysis</text>
+  
+  <rect class="sub-module" x="460" y="190" width="110" height="50" />
+  <text class="feature-text" x="515" y="220">Pattern Recognition</text>
+  
+  <rect class="sub-module" x="590" y="130" width="110" height="50" />
+  <text class="feature-text" x="645" y="160">Sentiment Analysis</text>
+  
+  <rect class="sub-module" x="590" y="190" width="110" height="50" />
+  <text class="feature-text" x="645" y="220">Market Indicators</text>
+  
+  <!-- NeuroShield Module -->
+  <rect class="module" x="80" y="320" width="280" height="220" />
+  <text class="title" x="220" y="350">NeuroShield</text>
+  <text class="subtitle" x="220" y="375">Risk Assessment & Protection</text>
+  
+  <rect class="sub-module" x="100" y="390" width="110" height="50" />
+  <text class="feature-text" x="155" y="420">Risk Calculation</text>
+  
+  <rect class="sub-module" x="100" y="450" width="110" height="50" />
+  <text class="feature-text" x="155" y="480">Stop Loss Manager</text>
+  
+  <rect class="sub-module" x="230" y="390" width="110" height="50" />
+  <text class="feature-text" x="285" y="420">Exposure Analysis</text>
+  
+  <rect class="sub-module" x="230" y="450" width="110" height="50" />
+  <text class="feature-text" x="285" y="480">Portfolio Protection</text>
+  
+  <!-- NeuroDAO Module -->
+  <rect class="module" x="440" y="320" width="280" height="220" />
+  <text class="title" x="580" y="350">NeuroDAO</text>
+  <text class="subtitle" x="580" y="375">Governance Platform</text>
+  
+  <rect class="sub-module" x="460" y="390" width="110" height="50" />
+  <text class="feature-text" x="515" y="420">Proposal System</text>
+  
+  <rect class="sub-module" x="460" y="450" width="110" height="50" />
+  <text class="feature-text" x="515" y="480">Voting Mechanism</text>
+  
+  <rect class="sub-module" x="590" y="390" width="110" height="50" />
+  <text class="feature-text" x="645" y="420">Treasury Management</text>
+  
+  <rect class="sub-module" x="590" y="450" width="110" height="50" />
+  <text class="feature-text" x="645" y="480">Community Analytics</text>
+  
+  <!-- Connectors -->
+  <path class="connector" d="M220,280 L220,320" />
+  <path class="connector" d="M580,280 L580,320" />
+  <path class="connector" d="M360,170 L440,170" />
+  <path class="connector" d="M360,430 L440,430" />
+  <path class="connector" d="M220,280 C220,300 580,300 580,280" />
+  
+  <!-- Central Hub Indicator -->
+  <circle cx="400" cy="300" r="15" fill="#3b82f6" opacity="0.6" />
+  <circle cx="400" cy="300" r="8" fill="#1e40af" />
+</svg> 

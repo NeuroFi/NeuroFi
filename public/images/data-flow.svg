@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sourceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dbeafe" />
+      <stop offset="100%" stop-color="#bfdbfe" />
+    </linearGradient>
+    <linearGradient id="processGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#93c5fd" />
+    </linearGradient>
+    <linearGradient id="storageGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#fde68a" />
+    </linearGradient>
+    <linearGradient id="uiGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dbeafe" />
+      <stop offset="100%" stop-color="#bfdbfe" />
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+    </marker>
+  </defs>
+  
+  <style>
+    .node {
+      fill: url(#sourceGradient);
+      stroke: #3b82f6;
+      stroke-width: 1.5;
+      rx: 12;
+      ry: 12;
+      filter: url(#dropShadow);
+    }
+    .process {
+      fill: url(#processGradient);
+      stroke: #3b82f6;
+      stroke-width: 1.5;
+      rx: 12;
+      ry: 12;
+      filter: url(#dropShadow);
+    }
+    .storage {
+      fill: url(#storageGradient);
+      stroke: #d97706;
+      stroke-width: 1.5;
+      rx: 8;
+      ry: 8;
+      filter: url(#dropShadow);
+    }
+    .ui {
+      fill: url(#uiGradient);
+      stroke: #3b82f6;
+      stroke-width: 1.5;
+      rx: 12;
+      ry: 12;
+      filter: url(#dropShadow);
+    }
+    .text {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      text-anchor: middle;
+      fill: #1e3a8a;
+      font-weight: bold;
+    }
+    .arrow {
+      stroke: #3b82f6;
+      stroke-width: 2;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+    .data-label {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      fill: #475569;
+      font-weight: 500;
+    }
+    .main-title {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-anchor: middle;
+      fill: #1e3a8a;
+    }
+  </style>
+  
+  <!-- Title -->
+  <text class="main-title" x="400" y="30">NeuroFi Data Flow</text>
+  
+  <!-- External Data Sources -->
+  <rect class="node" x="60" y="60" width="160" height="60" />
+  <text class="text" x="140" y="95">Market Data Providers</text>
+  
+  <rect class="node" x="60" y="200" width="160" height="60" />
+  <text class="text" x="140" y="235">Blockchain Networks</text>
+  
+  <rect class="node" x="60" y="340" width="160" height="60" />
+  <text class="text" x="140" y="375">User Wallet</text>
+  
+  <!-- Processing Nodes -->
+  <rect class="process" x="320" y="60" width="160" height="60" />
+  <text class="text" x="400" y="95">Data Processing</text>
+  
+  <rect class="process" x="320" y="200" width="160" height="60" />
+  <text class="text" x="400" y="235">AI Signal Generation</text>
+  
+  <rect class="process" x="320" y="340" width="160" height="60" />
+  <text class="text" x="400" y="375">Risk Assessment</text>
+  
+  <!-- Storage -->
+  <rect class="storage" x="580" y="130" width="160" height="60" />
+  <text class="text" x="660" y="165">Data Storage</text>
+  
+  <!-- UI -->
+  <rect class="ui" x="580" y="270" width="160" height="60" />
+  <text class="text" x="660" y="305">User Interface</text>
+  
+  <!-- Arrows -->
+  <!-- External Data to Processing -->
+  <path class="arrow" d="M220,90 L320,90" />
+  <path class="arrow" d="M220,230 L320,230" />
+  <path class="arrow" d="M220,370 L320,370" />
+  
+  <!-- Processing to Storage -->
+  <path class="arrow" d="M480,90 C530,90 530,130 580,130" />
+  <path class="arrow" d="M480,230 C530,230 530,160 580,160" />
+  <path class="arrow" d="M480,370 C530,370 530,305 580,305" />
+  
+  <!-- Storage to AI -->
+  <path class="arrow" d="M660,190 L660,230 C660,260 630,260 480,260" />
+  
+  <!-- Storage to UI -->
+  <path class="arrow" d="M660,190 L660,270" />
+  
+  <!-- Data Labels -->
+  <text class="data-label" x="270" y="70">Price Data</text>
+  <text class="data-label" x="270" y="210">Chain Data</text>
+  <text class="data-label" x="270" y="350">User Assets</text>
+  
+  <text class="data-label" x="510" y="70">Processed Market Data</text>
+  <text class="data-label" x="510" y="210">Trading Signals</text>
+  <text class="data-label" x="510" y="350">Risk Metrics</text>
+  
+  <text class="data-label" x="690" y="230">Visualizations</text>
+</svg> 
