@@ -34,9 +34,17 @@ Our mission is to democratize access to sophisticated trading algorithms and ris
 
 NeuroFi is built on a modern, scalable architecture designed for performance and reliability. The system is organized into several key layers:
 
-<p align="center">
-  <img src="./images/embed/architecture.svg" alt="NeuroFi Architecture" width="700" />
-</p>
+```
++-----------------------------------+
+|     Frontend (React, Next.js)     |
++-----------------------------------+
+|        Core Components            |
++-----------------------------------+
+|      API & Integration Layer      |
++-----------------------------------+
+|    Blockchain & Data Services     |
++-----------------------------------+
+```
 
 ### Frontend Layer
 - Built with React, Next.js, and TypeScript for a responsive and type-safe user experience
@@ -71,9 +79,18 @@ NeuroFi is built on a modern, scalable architecture designed for performance and
 
 The platform's data flow architecture ensures efficient processing of information from various sources to deliver actionable insights to users:
 
-<p align="center">
-  <img src="./images/embed/data-flow.svg" alt="NeuroFi Data Flow" width="700" />
-</p>
+```
++---------------+     +----------------+     +--------------+
+| Data Sources  | --> | Processing     | --> | Storage      |
+|               |     | & AI Analysis  |     | Systems      |
++---------------+     +----------------+     +--------------+
+                                                    |
+                                                    v
+                                            +--------------+
+                                            | User         |
+                                            | Interface    |
+                                            +--------------+
+```
 
 1. **Data Acquisition**: Raw data is collected from market data providers, blockchain networks, and user wallets
    - Price feeds from major exchanges and aggregators
@@ -103,9 +120,19 @@ The platform's data flow architecture ensures efficient processing of informatio
 
 NeuroFi consists of four primary functional modules, each handling a specific aspect of the trading ecosystem:
 
-<p align="center">
-  <img src="./images/embed/system-components.svg" alt="NeuroFi System Components" width="700" />
-</p>
+```
++----------------+     +----------------+
+| NeuroTrade     |     | NeuroScan      |
+| (AI Trading)   |     | (Analysis)     |
++----------------+     +----------------+
+        ^                     ^
+        |                     |
+        v                     v
++----------------+     +----------------+
+| NeuroShield    |     | NeuroDAO       |
+| (Risk Mgmt)    |     | (Governance)   |
++----------------+     +----------------+
+```
 
 ### NeuroTrade
 The AI-powered trading signal generation system provides:
