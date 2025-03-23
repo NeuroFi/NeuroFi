@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="450" viewBox="0 0 700 450">
+  <style>
+    .source {
+      fill: #f0f9ff;
+      stroke: #0ea5e9;
+      stroke-width: 2;
+      rx: 10;
+      ry: 10;
+    }
+    .process {
+      fill: #f0f7ff;
+      stroke: #3b82f6;
+      stroke-width: 2;
+      rx: 12;
+      ry: 12;
+    }
+    .storage {
+      fill: #faf5ff;
+      stroke: #8b5cf6;
+      stroke-width: 2;
+      rx: 10;
+      ry: 10;
+    }
+    .ui {
+      fill: #f8fafc;
+      stroke: #64748b;
+      stroke-width: 2;
+      rx: 10;
+      ry: 10;
+    }
+    .arrow {
+      stroke: #94a3b8;
+      stroke-width: 2;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+    .text-label {
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-anchor: middle;
+      fill: #334155;
+    }
+    .text-sublabel {
+      font-family: sans-serif;
+      font-size: 12px;
+      text-anchor: middle;
+      fill: #64748b;
+    }
+    .data-label {
+      font-family: sans-serif;
+      font-size: 10px;
+      text-anchor: middle;
+      fill: #64748b;
+    }
+    .title {
+      font-family: sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      text-anchor: middle;
+      fill: #1e3a8a;
+    }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text class="title" x="350" y="30">NeuroFi Data Flow</text>
+  
+  <!-- External Data Sources -->
+  <rect class="source" x="50" y="70" width="140" height="60" />
+  <text class="text-label" x="120" y="95">Market Data</text>
+  <text class="text-sublabel" x="120" y="115">APIs</text>
+  
+  <rect class="source" x="50" y="190" width="140" height="60" />
+  <text class="text-label" x="120" y="215">On-Chain Data</text>
+  <text class="text-sublabel" x="120" y="235">Blockchain RPC</text>
+  
+  <rect class="source" x="50" y="310" width="140" height="60" />
+  <text class="text-label" x="120" y="335">Social Data</text>
+  <text class="text-sublabel" x="120" y="355">Sentiment APIs</text>
+  
+  <!-- Processing Nodes -->
+  <rect class="process" x="280" y="70" width="140" height="60" />
+  <text class="text-label" x="350" y="95">Data Processing</text>
+  <text class="text-sublabel" x="350" y="115">ETL Pipeline</text>
+  
+  <rect class="process" x="280" y="190" width="140" height="60" />
+  <text class="text-label" x="350" y="215">ML Models</text>
+  <text class="text-sublabel" x="350" y="235">Neural Networks</text>
+  
+  <rect class="process" x="280" y="310" width="140" height="60" />
+  <text class="text-label" x="350" y="335">Risk Assessment</text>
+  <text class="text-sublabel" x="350" y="355">Analysis Engines</text>
+  
+  <!-- Storage -->
+  <rect class="storage" x="510" y="130" width="140" height="60" />
+  <text class="text-label" x="580" y="155">Signal Database</text>
+  <text class="text-sublabel" x="580" y="175">Time Series</text>
+  
+  <rect class="storage" x="510" y="250" width="140" height="60" />
+  <text class="text-label" x="580" y="275">User Database</text>
+  <text class="text-sublabel" x="580" y="295">Preferences & History</text>
+  
+  <!-- UI -->
+  <rect class="ui" x="280" y="380" width="140" height="60" />
+  <text class="text-label" x="350" y="405">User Interface</text>
+  <text class="text-sublabel" x="350" y="425">Dashboard & Controls</text>
+  
+  <!-- Arrows -->
+  <path class="arrow" d="M190,100 L280,100" />
+  <text class="data-label" x="235" y="90">Market Prices</text>
+  
+  <path class="arrow" d="M190,220 L280,220" />
+  <text class="data-label" x="235" y="210">Blockchain Txs</text>
+  
+  <path class="arrow" d="M190,340 L280,340" />
+  <text class="data-label" x="235" y="330">Social Trends</text>
+  
+  <path class="arrow" d="M350,130 L350,190" />
+  <text class="data-label" x="370" y="160">Clean Data</text>
+  
+  <path class="arrow" d="M420,100 L510,148" />
+  <text class="data-label" x="460" y="115">Processed Data</text>
+  
+  <path class="arrow" d="M420,220 L510,167" />
+  <text class="data-label" x="465" y="185">Trading Signals</text>
+  
+  <path class="arrow" d="M420,340 L510,288" />
+  <text class="data-label" x="465" y="305">Risk Profiles</text>
+  
+  <path class="arrow" d="M350,310 L350,380" />
+  <text class="data-label" x="380" y="345">Status Updates</text>
+  
+  <path class="arrow" d="M510,280 L420,380" />
+  <text class="data-label" x="460" y="340">User Settings</text>
+  
+  <path class="arrow" d="M510,160 L420,380" />
+  <text class="data-label" x="425" y="260">Trading History</text>
+</svg> 

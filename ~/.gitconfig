@@ -1,0 +1,16 @@
+[user]
+        name = NeuroFi
+        email = neurofi@163.com
+[alias]
+        br = branch
+        co = checkout
+        cm = commit -am
+        df = diff
+        st = status
+        pl = pull
+        ps = push
+        cob = checkout -b
+[log]
+        date = iso
+[init]
+        defaultBranch = main 
