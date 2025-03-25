@@ -23,9 +23,13 @@ def check_file(filepath, patterns):
 def main():
     # Define patterns to search for (sensitive information)
     patterns = [
-        (r'username', 'username example'),
-        (r'company1', 'company example'),
-        (r'company2', 'company example'),
+        # Remove username as it's a common variable name
+        # (r'username', 'username example'),
+        # Specific patterns for actual personal information
+        (r'cuiminghui', 'personal name'),
+        (r'carol', 'personal name'),
+        (r'lyra', 'company name'),
+        (r'崔明慧', 'personal name in Chinese'),
         (r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', 'email address'),
         # More specific phone number pattern that won't match prices or IDs
         (r'\b(?:\+?1[-.]?)?\(?(?:[0-9]{3})\)?[-. ]?[0-9]{3}[-. ]?[0-9]{4}\b', 'phone number')
